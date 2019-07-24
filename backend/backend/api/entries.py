@@ -171,6 +171,7 @@ class EntriesResource(Resource):
                                attribute_filter=attributes,
                                metadata_filter=metadata,
                                n=args["n"], offset=args.get("offset"),
+                               followups=True,
                                sort_by_timestamp=args.get("sort_by_timestamp"))
             entries = logbook.get_entries(**search_args)
         else:
@@ -184,6 +185,7 @@ class EntriesResource(Resource):
                                attribute_filter=attributes,
                                metadata_filter=metadata,
                                n=args["n"], offset=args.get("offset"),
+                               followups=True,
                                sort_by_timestamp=args.get("sort_by_timestamp"))
             entries = Entry.search(**search_args)
 

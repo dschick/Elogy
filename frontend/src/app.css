@@ -1,9 +1,11 @@
 a {
+   color: #6482d2;
    outline: 0;  /* get rid of annoying selection rectangle in FF */
 }
 
 #app {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    font-family: 'Fira Sans', 'Avenir', Helvetica, Arial, sans-serif;
+    color: #3c415a;
     display: flex;
     flex-direction: row;
     width: 100%;
