@@ -111,6 +111,7 @@ def export_entries_as_html(logbook, entries):
         <html lang="en">
         <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="/favicon.ico">
         <style>
         a {
@@ -133,6 +134,11 @@ def export_entries_as_html(logbook, entries):
             padding-left: 15px;
             padding-bottom: 2px;
             padding-top: 2px;
+        }
+        
+        img {
+            max-width: 100%;
+            max-height: 100%;
         }
         
         .header {
